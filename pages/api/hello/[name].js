@@ -1,11 +1,4 @@
-import { useRouter } from 'next/router'
-
-const Post = () => {
-  const router = useRouter()
-  const { pid } = router.query
-
-  console.log(pid);
-  return <p>Hello {pid} !</p>
+export default function handler(req, res) {
+    const { name } = req.query;
+    res.status(200).send(`Hello ${name} !`);
 }
-
-export default Post
