@@ -1,4 +1,4 @@
-import { posts } from "../resources";
+import { posts } from "./resources";
 
 function addPost(body, res) {
   if (!body.title || !body.content) {
